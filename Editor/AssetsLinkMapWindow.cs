@@ -70,7 +70,7 @@ namespace AssetsLinkMap
                 _settings = new AssetsLinkMapSettings();
                 _settings.Load();
             }
-            m_graphDrawer = new AssetsLinkMapGraphDrawer(m_GraphView, m_settings);
+            m_graphDrawer = new AssetsLinkMapGraphDrawer(m_GraphView, m_settings, this);
             m_resolver = new AssetsLinkMapResolver(m_GraphView, m_settings);
             if (m_toolBar == null)
                 BuildToolBar();
